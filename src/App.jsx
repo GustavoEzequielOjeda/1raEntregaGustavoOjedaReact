@@ -1,5 +1,6 @@
-import ButtonComponent from './components/ButtonComponent';
+import ButtonComponent from './components/ButtonComponent/ButtonComponent';
 import NavBarComponent from './NavBarComponent/NavBarComponent';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import { useState } from 'react';
 
 import './App.css'
@@ -17,8 +18,8 @@ const App = () => {
   return (
     <div className='container-banco'>
       <NavBarComponent/>
+      <ItemListContainer greeting="Banco"/>
       <div>
-        <h1>Banco</h1>
         <h4>Ingrese el monto que desea retirar</h4>
         <h5>Contador: ${count}</h5>
       </div>
